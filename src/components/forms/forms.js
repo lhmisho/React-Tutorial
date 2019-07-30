@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import axios from 'axios'
 
 const initialState = {
     name: '',
@@ -8,8 +8,14 @@ const initialState = {
     bio: '',
     country: '',
     gender: '',
-    skills: []
+    skills: [],
+    address : {
+        street    : '',
+        city      : '',
+        zip       : ''
+    }
 }
+const BASE_URL = 'http://localhost:3000/about'
 
 class PostForms extends Component {
 
@@ -26,15 +32,27 @@ class PostForms extends Component {
             if(event.target.checked){
                 this.setState({
                     ...this.state,
-                    skills: this.state.skills.concat(event.target.value)
+                    skills: this.state.skills.concat(event.target.value) // saving array elements
                 })
             }else{
                 this.setState({
                     ...this.state,
-                    skills: this.state.skills.filter(skill => skill != event.target.value)
+                    skills: this.state.skills.filter(skill => skill !== event.target.value)
                 })
             }
-        }else{
+        } else if(event.target.name === 'city'){
+            this.setState({
+                address: Object.assign(this.state.address, {city: event.target.value}) // saving nested elements
+            })
+        } else if(event.target.name === 'street'){
+            this.setState({
+                address: Object.assign(this.state.address, {street: event.target.value})
+            })
+        } else if(event.target.name === 'zip'){
+            this.setState({
+                address: Object.assign(this.state.address, {zip: event.target.value})
+            })
+        } else {
             this.setState({
                 [event.target.name]: event.target.value
             })
@@ -45,12 +63,17 @@ class PostForms extends Component {
 
         event.preventDefault();
         console.log(this.state)
-
-        this.myForm.current.reset()
-
         this.setState({
             ...initialState
         })
+
+        axios.post(BASE_URL, {...this.state})
+            .then(res => {
+                alert("data successfully added")
+            })
+            .catch(err => console.log(err))
+
+        this.myForm.current.reset()
     }
 
     render() {
@@ -58,19 +81,19 @@ class PostForms extends Component {
             <form ref={this.myForm} onSubmit={this.submitHandler}>
                 <div className="form-group">
                     <label htmlFor="name">Name</label>
-                    <input type="text" className="form-control" id="name" name="name" placeholder="Enter name" onChange={this.changeHandler} value={this.state.value} />
+                    <input type="text" className="form-control" id="name" name="name" placeholder="Enter name" onChange={this.changeHandler} value={this.state.name} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="email">Email address</label>
-                    <input type="email" className="form-control" id="email" name="email" placeholder="Enter email" onChange={this.changeHandler} value={this.state.value} />
+                    <input type="email" className="form-control" id="email" name="email" placeholder="Enter email" onChange={this.changeHandler} value={this.state.email} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="bio">Bio</label>
-                    <textarea type="textarea" className="form-control" id="bio" name="bio" placeholder="Enter short bio" onChange={this.changeHandler} value={this.state.value} />
+                    <textarea type="textarea" className="form-control" id="bio" name="bio" placeholder="Enter short bio" onChange={this.changeHandler} value={this.state.bio} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="password">Password</label>
-                    <input type="password" className="form-control" name="password" placeholder="Password" onChange={this.changeHandler} value={this.state.value} />
+                    <input type="password" className="form-control" name="password" placeholder="Password" onChange={this.changeHandler} value={this.state.password} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="country">Select your country</label>
@@ -80,6 +103,18 @@ class PostForms extends Component {
                         <option value="India">India</option>
                         <option value="Pakistan">Pakistan</option>
                     </select>
+                </div>
+                <div className="form-group">
+                    <label htmlFor="city">City</label>
+                    <input onChange={this.changeHandler} value={this.state.value} type="text" id="city" name="city" className="form-control"/>
+                </div>
+                <div className="form-group">
+                    <label htmlFor="street">Street</label>
+                    <input onChange={this.changeHandler} type="text" id="street" name="street" className="form-control" />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="zip">Zip code</label>
+                    <input onChange={this.changeHandler} type="text" id="zip" name="zip" className="form-control" />
                 </div>
                 <div className="form-group">
                     <label htmlFor="gender">Gender</label>
