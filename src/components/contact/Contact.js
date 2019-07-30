@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import axios from 'axios'
 
 const BASE_URL = 'http://localhost:3000/contacts'
-const tBody = document.querySelector("#tBody")
 
 class Contact extends Component{
 
@@ -55,7 +54,7 @@ class Contact extends Component{
                 <td>{contact.email}</td>
                 <td>{contact.phone}</td>
                 <td>
-                  <a className="btn btn-warning btn-sm" onClick={ this.deleteHandler(contact.id).bind(this)} >Delele</a>
+                  <button className="btn btn-warning btn-sm" onClick={ this.deleteHandler(contact.id).bind(this)} >Delete</button>
                 </td>
               </tr>
               )
