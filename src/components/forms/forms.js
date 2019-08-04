@@ -15,7 +15,7 @@ const initialState = {
         zip       : ''
     }
 }
-const BASE_URL = 'http://localhost:3000/about'
+const BASE_URL = 'http://localhost:3000/persons'
 
 class PostForms extends Component {
 

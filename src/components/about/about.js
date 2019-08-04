@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
-const BASE_URL = 'http://localhost:3000/about'
+const BASE_URL = 'http://localhost:3000/persons'
 
-class About extends Component{
+class Person extends Component{
 
     state = {
       data : []
@@ -67,4 +67,4 @@ class About extends Component{
     }
 }
 
-export default About
+export default Person

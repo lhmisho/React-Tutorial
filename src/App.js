@@ -5,7 +5,7 @@ import './App.css';
 import Contact from './components/contact/Contact'
 import PostForms from './components/forms/forms'
 import Home from './components/home/home'
-import About from './components/about/about'
+import Person from "./components/about/about";
 import ContactDetails from './components/contact/contactDetails'
 import Nav from './components/nav/nav'
 
@@ -17,7 +17,7 @@ class App extends Component {
       contact   : Contact,
       postForm  : PostForms,
       home      : Home,
-      about     : About,
+      about     : Person,
       contactDetails : ContactDetails,
 
     }
