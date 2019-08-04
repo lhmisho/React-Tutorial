@@ -44,7 +44,12 @@ class ContactDetails extends Component{
     
     submitHandler = (event) =>{
         event.preventDefault();
-        console.log(this.state.data)
+        axios.put(`${BASE_URL}/${this.state.data.id}`, this.state.data)
+            .then(res => {
+                alert("successfully update userID" + this.state.data.id)
+            })
+            .catch(err => console.log(err))
+        console.log(this.state.data.id)
     }
     render(){
         let  data  = this.state.data
