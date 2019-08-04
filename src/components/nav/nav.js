@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Link, Route } from 'react-router-dom'
 import ContactDetails from '../contact/contactDetails'
+import PersonDetails from '../about/personDetails'
 
 class Nav extends Component {
   render() {
@@ -36,6 +37,7 @@ class Nav extends Component {
               <Route path="/add-about/" component={this.props.navElements.postForm} />
               <Route path="/about-list/" component={this.props.navElements.about} />
               <Route exact path="/contactDetails/:contactId" component={ContactDetails} />
+              <Route exact path="/person-details/:personId" component={PersonDetails} />
               {/* <Route path="/contact-details/" component={ContactDetails} /> */}
 
             </Switch>

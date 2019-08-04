@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-
+import { Link } from 'react-router-dom'
 const BASE_URL = 'http://localhost:3000/persons'
 
 class Person extends Component{
@@ -55,6 +55,7 @@ class Person extends Component{
                 <td>{obj.phone ? obj.phone : 'N/A'}</td>
                 <td>
                   <button className="btn btn-warning btn-sm" onClick={ this.deleteHandler(obj.id).bind(this)} >Delete</button>
+                  <button className="btn btn-danger btn-sm"><Link to={`/person-details/${obj.id}`}>Edit</Link></button>
                 </td>
               </tr>
               )
