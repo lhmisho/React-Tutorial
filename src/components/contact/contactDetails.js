@@ -21,33 +21,50 @@ class ContactDetails extends Component{
                 console.log(this.state.data)
             })
             .catch(err => console.log(err))
-    }
 
-    changeHandler = () =>{
-        
     }
-    submitHandler = () =>{
-
+    changeHandler = (event) =>{
+        if(event.target.name === 'name'){
+            this.setState({
+                ...this.state,
+                data: Object.assign(this.state.data, {name: event.target.value})
+            })
+        }else if(event.target.name === 'email'){
+            this.setState({
+                ...this.state,
+                data: Object.assign(this.state.data, {email: event.target.value})
+            })
+        }else if(event.target.name === 'username'){
+            this.setState({
+                ...this.state,
+                data: Object.assign(this.state.data, {username: event.target.value})
+            })
+        }
+    }
+    
+    submitHandler = (event) =>{
+        event.preventDefault();
+        console.log(this.state.data)
     }
     render(){
-        const  data  = this.state.data
+        let  data  = this.state.data
         return(
-            <form ref={this.myForm} onSubmit={this.submitHandler}>
+            <form onSubmit={this.submitHandler}>
                 <div className="form-group">
                     <label htmlFor="name">Name</label>
-                    <input type="text" className="form-control" id="name" name="name" placeholder="Enter name" onChange={this.changeHandler} value={data.name} />
+                    <input type="text" className="form-control" id="name" name="name" placeholder="Enter name" defaultValue={data.name} onChange={this.changeHandler} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="email">Email address</label>
-                    <input type="email" className="form-control" id="email" name="email" placeholder="Enter email" onChange={this.changeHandler} value={data.email} />
+                    <input type="email" className="form-control" id="email" name="email" placeholder="Enter email" onChange={this.changeHandler} defaultValue={data.email} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="username">Username</label>
-                    <input type="text" className="form-control" id="username" name="username" placeholder="username" onChange={this.changeHandler} value={data.username} />
+                    <input type="text" className="form-control" id="username" name="username" placeholder="username" onChange={this.changeHandler} defaultValue={data.username} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="phone">Phone</label>
-                    <input type="text" className="form-control" id="phone" name="phone" placeholder="phone" onChange={this.changeHandler} value={data.phone} />
+                    <input type="text" className="form-control" id="phone" name="phone" placeholder="phone" onChange={this.changeHandler} defaultValue={data.phone} />
                 </div>
                 <br></br>
                 <div className="form-group">
