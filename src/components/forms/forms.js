@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import SelectComp from '../selectJs/select_js'
 
 const initialState = {
     name: '',
@@ -13,8 +14,16 @@ const initialState = {
         street    : '',
         city      : '',
         zip       : ''
-    }
+    },
+    
 }
+
+const options = [
+    { value: 'Bangladesh',  label: 'Bangladesh' },
+    { value: 'India',       label: 'India' },
+    { value: 'Pakistan',    label: 'Pakistan' },
+];
+
 const BASE_URL = 'http://localhost:3000/persons'
 
 class PostForms extends Component {
@@ -24,10 +33,10 @@ class PostForms extends Component {
 
         this.myForm = React.createRef()
     }
-
     state = initialState
 
     changeHandler = (event) => {
+        console.log(event.target.name)
         if(event.target.type === 'checkbox'){
             if(event.target.checked){
                 this.setState({
@@ -58,6 +67,10 @@ class PostForms extends Component {
             })
         }
     };
+
+    countrySelectd(selected){
+        console.log(selected)
+    }
 
     submitHandler = event => {
 
@@ -104,6 +117,10 @@ class PostForms extends Component {
                         <option value="Pakistan">Pakistan</option>
                     </select>
                 </div>
+                {/* <div className="form-group">
+                    <label htmlFor="country">Select Country</label>
+                    <SelectComp options={options} onChange={this.changeHandler.bind(this)} />
+                </div> */}
                 <div className="form-group">
                     <label htmlFor="city">City</label>
                     <input onChange={this.changeHandler} value={this.state.value} type="text" id="city" name="city" className="form-control"/>
