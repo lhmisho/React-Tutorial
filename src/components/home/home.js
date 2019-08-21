@@ -1,8 +1,11 @@
 import React from 'react'
-
+// import {} from '../../images/'
 const Home = () => {
     return(
-        <h1>Hi i am home</h1>
+        <div>
+            <h1>Hi i am home</h1>
+            <img src="../../images/image.png" alt="" />
+        </div>
     )
 }
 

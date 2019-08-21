@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import SelectComp from '../selectJs/select_js'
 
 const initialState = {
     name: '',
@@ -18,11 +17,11 @@ const initialState = {
     
 }
 
-const options = [
-    { value: 'Bangladesh',  label: 'Bangladesh' },
-    { value: 'India',       label: 'India' },
-    { value: 'Pakistan',    label: 'Pakistan' },
-];
+// const options = [
+//     { value: 'Bangladesh',  label: 'Bangladesh' },
+//     { value: 'India',       label: 'India' },
+//     { value: 'Pakistan',    label: 'Pakistan' },
+// ];
 
 const BASE_URL = 'http://localhost:3000/persons'
 
@@ -117,10 +116,6 @@ class PostForms extends Component {
                         <option value="Pakistan">Pakistan</option>
                     </select>
                 </div>
-                {/* <div className="form-group">
-                    <label htmlFor="country">Select Country</label>
-                    <SelectComp options={options} onChange={this.changeHandler.bind(this)} />
-                </div> */}
                 <div className="form-group">
                     <label htmlFor="city">City</label>
                     <input onChange={this.changeHandler} value={this.state.value} type="text" id="city" name="city" className="form-control"/>
