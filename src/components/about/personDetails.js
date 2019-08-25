@@ -21,12 +21,6 @@ class PersonDetails extends Component{
         city: null,
         street: null,
         zip: null,
-        php:false,
-        python: false,
-        java: false,
-        javascript: false,
-        c: false,
-        cp: false
     }
 
     componentDidMount(){
@@ -37,52 +31,17 @@ class PersonDetails extends Component{
                 this.setState({
                     person: res.data
                 })
-                this.fillcheckbox(this.state.person.skills)
                 this.setAddress(this.state.person.address)
                 console.log(this.state.person)
             })
             .then(err => console.log(err))
     }
 
-    // for filling checkbox value 
-    fillcheckbox = (skills) => {
-        skills.includes("php") ? this.setState({
-            php: true
-        }) : this.setState({
-            php: false
-        })
-        skills.includes("python") ? this.setState({
-            python: true
-        }) : this.setState({
-            python: false
-        })
-        skills.includes("java") ? this.setState({
-            java: true
-        }) : this.setState({
-            java: false
-        })
-        skills.includes("c") ? this.setState({
-            c: true
-        }) : this.setState({
-            c: false
-        })
-        skills.includes("c++") ? this.setState({
-            cp: true
-        }) : this.setState({
-            cp: false
-        })
-        skills.includes("javascript") ? this.setState({
-            javascript: true
-        }) : this.setState({
-            javascript: false
-        })
-    }
-
     // set address
     setAddress = (address) => {
-        address.city != null ? this.setState({ city: address.city }) : this.setState({ city: "N/A"})
-        address.street != null ? this.setState({ street: address.street }) : this.setState({ street: "N/A"})
-        address.zip != null ? this.setState({ zip: address.zip }) : this.setState({ zip: "N/A"})
+        address.city !== null ? this.setState({ city: address.city }) : this.setState({ city: "N/A"})
+        address.street !== null ? this.setState({ street: address.street }) : this.setState({ street: "N/A"})
+        address.zip !== null ? this.setState({ zip: address.zip }) : this.setState({ zip: "N/A"})
     }
 
     changeHandler = (event) =>{
@@ -144,7 +103,6 @@ class PersonDetails extends Component{
         }
     }
 
-    
     submitHandler = (event) =>{
         event.preventDefault();
         console.log(this.state.person)
@@ -189,7 +147,7 @@ class PersonDetails extends Component{
                 </div>
                 <div className="form-group">
                     <label htmlFor="country">Select your country</label>
-                    <select onChange={this.changeHandler} value={data.country} name="country" id="country" className="form-control">
+                    <select onChange={this.changeHandler.bind(this)} value={data.country} name="country" id="country" className="form-control">
                         <option>--select country--</option>
                         {options.map(option => {
                             return <option key={option.value} value={option.value}>{option.label}</option>

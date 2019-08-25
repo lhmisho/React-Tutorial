@@ -14,6 +14,7 @@ const initialState = {
         city      : '',
         zip       : ''
     },
+    image : null,
     
 }
 
@@ -67,8 +68,12 @@ class PostForms extends Component {
         }
     };
 
-    countrySelectd(selected){
-        console.log(selected)
+    changeFileHandler = (event) =>{
+        console.log(event.target.type)
+        this.setState({
+            image: event.target.files[0]
+        })
+        console.log(this.state.image)
     }
 
     submitHandler = event => {
@@ -90,7 +95,7 @@ class PostForms extends Component {
 
     render() {
         return (
-            <form ref={this.myForm} onSubmit={this.submitHandler}>
+            <form ref={this.myForm} onSubmit={this.submitHandler} encType="multipart/form-data">
                 <div className="form-group">
                     <label htmlFor="name">Name</label>
                     <input type="text" className="form-control" id="name" name="name" placeholder="Enter name" onChange={this.changeHandler} value={this.state.name} />
@@ -109,7 +114,7 @@ class PostForms extends Component {
                 </div>
                 <div className="form-group">
                     <label htmlFor="country">Select your country</label>
-                    <select onChange={this.changeHandler} name="country" id="country" className="form-control">
+                    <select onChange={this.changeHandler} name="country" id="country" className="form-control" >
                         <option value="">--country--</option>
                         <option value="Bangladesh">Bangladesh</option>
                         <option value="India">India</option>
@@ -172,6 +177,10 @@ class PostForms extends Component {
                                 <label className="form-check-label" htmlFor="javascript">JavaScript</label>
                             </div>
                         </div>
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="image">Upload Image</label>
+                        <input type="file" accept="image/*" onChange={this.changeFileHandler} className="form-control" id="image" />
                     </div>
                 </div>
                 <br></br>
