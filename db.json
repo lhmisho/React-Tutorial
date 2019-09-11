@@ -1,0 +1,158 @@
+{
+  "blogDetail": {
+    "title": "Continually aggregate interdependent infrastructures with progressive.",
+    "author":"Mr. Joy",
+    "date": "1 August 2019",
+    "image": "img/blog-img2.jpg",
+    "qoute": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque suscipit tincidunt magna non mollis. Fusce tempus tincidunt nisi, in luctus elit pellentesque quis. Sed velit mi, ullamcorper ut tempor ut, mattis eu lacus. Morbi rhoncus aliquet tellus, id accumsan enim sollicitudin vitae.",
+    "contentOne": "So striking at of to welcomed resolved. Northward by described up household therefore attention. Excellence decisively nay man yet impression for contrasted remarkably. There spoke happy for you are out. Fertile how old address did showing because sitting replied six. Had arose guest visit going off child she new.",
+    "contentTwo": "Forfeited you engrossed but gay sometimes explained. Another as studied it to evident. Merry sense given he be arise. Conduct at an replied removal an amongst. Remaining determine few her two cordially admitting old. Sometimes strangers his ourselves her depending you boy. Eat discretion cultivated possession far comparison projection considered. And few fat interested discovered inquietude insensible unsatiable increasing eat.Procuring education on consulted assurance in do. Is sympathize he expression mr no travelling. Preference he he at travelling in resolution.",
+    "contentThree": "Unpleasant astonished an diminution up partiality. Noisy an their of meant. Death means up civil do an offer wound of. Called square an in afraid direct. Resolution diminution conviction so mr at unpleasing simplicity no. No it as breakfast up conveying earnestly immediate principle. Him son disposed produced humoured overcame she bachelor improved. Studied however out wishing but inhabit fortune windows.",
+    "comments": [
+      {
+        "id": 1,
+        "name": "Lillie J. Yates",
+        "date": "Dec 26, 2017 at 15:35",
+        "image": "img/t2.jpg",
+        "content": "Continually leverage existing distinctive sources after excellent data. Interactively evolve enterprise leadership skills vis-a-vis."
+      },
+      {
+        "id": 2,
+        "name": "Todd B. Tucker",
+        "date": "Jan 16, 2018 at 04:35",
+        "image": "img/t3.jpg",
+        "content": "Professionally envisioneer enabled interfaces vis-a-vis plug-and-play supply chains. Competently benchmark real-time value without process-centric."
+      }
+    ]
+  },
+  "themeOnePromoSection": {
+    "promoData": [
+      {
+        "id": 1,
+        "heading": "Easy To Use",
+        "content": "Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt.",
+        "iconClass": "ti-face-smile"
+      },
+      {
+        "id": 2,
+        "heading": "Awesome Design",
+        "content": "Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt.",
+        "iconClass": "ti-vector"
+      },
+      {
+        "id": 3,
+        "heading": "Easy To Customize",
+        "content": "Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt.",
+        "iconClass": "ti-palette"
+      },
+      {
+        "id": 4,
+        "heading": "24/7 Support",
+        "content": "Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt.",
+        "iconClass": "ti-headphone-alt"
+      }
+    ]
+  },
+  "themeOneFeatureSection": {
+    "content": "Continually network virtual strategic theme areas vis-a-vis ubiquitous potentialities. Holisticly negotiate focused e-tailers without premium solutions.",
+    "heading": "ApeTech Features",
+    "image": "/img/feature-image.png",
+    "featureDataOne": [
+      {
+        "id": 1,
+        "iconClass": "fa fa-object-ungroup",
+        "heading": "Responsive web design",
+        "content": "Modular and interchangable componente between layouts and even demos."
+      },
+      {
+        "id": 2,
+        "iconClass": "fa fa-dropbox",
+        "heading": "Loaded with features",
+        "content": "Modular and interchangable componente between layouts and even demos."
+      },
+      {
+        "id": 3,
+        "iconClass": "fa fa-smile-o",
+        "heading": "Friendly online support",
+        "content": "Modular and interchangable componente between layouts and even demos."
+      }
+    ],
+    "featureDataTwo": [
+      {
+        "id": 1,
+        "iconClass": "fa fa-file-archive-o",
+        "heading": "Free updates forever",
+        "content": "Modular and interchangable componente between layouts and even demos."
+      },
+      {
+        "id": 2,
+        "iconClass": "fa fa-adjust",
+        "heading": "Infinite colors",
+        "content": "Modular and interchangable componente between layouts and even demos."
+      },
+      {
+        "id": 3,
+        "iconClass": "fa fa-smile-o",
+        "heading": "Friendly online support",
+        "content": "Modular and interchangable componente between layouts and even demos."
+      }
+    ]
+  },
+  "themeOnePricingSection": {
+    "heading": "Pricing Plan",
+    "content": "we believe in making simple and fair pricing plans. Choose your next successful plan and get started today!.",
+    "pricingData": [
+      {
+        "id": 1,
+        "heading": "Basic",
+        "priceType": "Individual",
+        "minPrice": "7.",
+        "subPrice": "00",
+        "packageTime": "Month"
+      },
+      {
+        "id": 2,
+        "heading": "Premium",
+        "priceType": "Business",
+        "minPrice": "15.",
+        "subPrice": "00",
+        "packageTime": "Month"
+      },
+      {
+        "id": 3,
+        "heading": "Ultimate",
+        "priceType": "Enterprise",
+        "minPrice": "23.",
+        "subPrice": "00",
+        "packageTime": "Month"
+      }
+    ]
+  },
+  "themeOneFaqSection": {
+    "heading": "Faq's",
+    "content": "we believe in making simple and fair pricing plans. Choose your next successful planand get started today!.",
+    "image": "/img/faq-right.png",
+    "data": [
+      {
+        "id": 1,
+        "question": "Modern, Elegant Design ?",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros.,"
+      },
+      {
+        "id": 2,
+        "question": "User Interface Design ?",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros.,"
+      },
+      {
+        "id": 3,
+        "question": "Cross Browser Support ?",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros.,"
+      },
+      {
+        "id": 4,
+        "question": "User Experience Design ?",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros.,"
+      }
+    ]
+  }
+}
