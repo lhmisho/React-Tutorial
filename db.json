@@ -104,5 +104,79 @@
         "ul_4": "Identification & Smart"
       }
     ]
-  }
+  },
+  "blogSection": [
+    {
+      "id": 1,
+      "heading": "Continually reinvent competitive",
+      "image": "/img/blog-img1.jpg",
+      "content": "Rapidiously aggregate client-focused strategic theme areas after high-quality data. Continually aggregate diverse ideas."
+    },
+    {
+      "id": 2,
+      "heading": "Competently impact strategic",
+      "image": "/img/blog-img2.jpg",
+      "content": "Professionally grow technically sound technologies with fully researched metrics. Assertively embrace empowered."
+    },
+    {
+      "id": 3,
+      "heading": "Continually reinvent competitive",
+      "image": "/img/blog-img1.jpg",
+      "content": "Rapidiously aggregate client-focused strategic theme areas after high-quality data. Continually aggregate diverse ideas."
+    },
+    {
+      "id": 4,
+      "heading": "Rapidiously predominatev just",
+      "image": "/img/blog-img3.jpg",
+      "content": "Continually fabricate magnetic interfaces through inexpensive solutions. Continually iterate distributed infomediaries."
+    },
+    {
+      "id": 5,
+      "heading": "Interactively productize low-risk",
+      "image": "/img/blog-img4.jpg",
+      "content": "Appropriately develop high-payoff catalysts for change after premier e-markets. This is interactively maximize."
+    },
+    {
+      "id": 6,
+      "heading": "Continually reinvent competitive",
+      "image": "/img/blog-img1.jpg",
+      "content": "Rapidiously aggregate client-focused strategic theme areas after high-quality data. Continually aggregate diverse ideas."
+    },
+    {
+      "id": 7,
+      "heading": "Competently impact strategic",
+      "image": "/img/blog-img2.jpg",
+      "content": "Professionally grow technically sound technologies with fully researched metrics. Assertively embrace empowered."
+    },
+    {
+      "id": 8,
+      "heading": "Continually reinvent competitive",
+      "image": "/img/blog-img1.jpg",
+      "content": "Rapidiously aggregate client-focused strategic theme areas after high-quality data. Continually aggregate diverse ideas."
+    },
+    {
+      "id": 9,
+      "heading": "Rapidiously predominatev just",
+      "image": "/img/blog-img3.jpg",
+      "content": "Continually fabricate magnetic interfaces through inexpensive solutions. Continually iterate distributed infomediaries."
+    },
+    {
+      "id": 10,
+      "heading": "Interactively productize low-risk",
+      "image": "/img/blog-img4.jpg",
+      "content": "Appropriately develop high-payoff catalysts for change after premier e-markets. This is interactively maximize."
+    },
+    {
+      "id": 11,
+      "heading": "Continually reinvent competitive",
+      "image": "/img/blog-img1.jpg",
+      "content": "Rapidiously aggregate client-focused strategic theme areas after high-quality data. Continually aggregate diverse ideas."
+    },
+    {
+      "id": 12,
+      "heading": "Competently impact strategic",
+      "image": "/img/blog-img2.jpg",
+      "content": "Professionally grow technically sound technologies with fully researched metrics. Assertively embrace empowered."
+    }
+  ]
 }
