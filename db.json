@@ -41,27 +41,27 @@
       {
         "id": 1,
         "iconClass": "fa fa-facebook",
-        "link": "facebook"
+        "link": "/"
       },
       {
         "id": 2,
         "iconClass": "fa fa-twitter",
-        "link": "twitter"
+        "link": "/"
       },
       {
         "id": 3,
         "iconClass": "fa fa-linkedin",
-        "link": "linkedin"
+        "link": "/"
       },
       {
         "id": 4,
         "iconClass": "fa fa-google-plus",
-        "link": "google-plus"
+        "link": "/"
       },
       {
         "id": 5,
         "iconClass": "fa fa-youtube",
-        "link": "youtube"
+        "link": "/"
       }
     ]
   },
