@@ -8,7 +8,7 @@ import Home from './components/home/home'
 import Person from "./components/about/about";
 import ContactDetails from './components/contact/contactDetails'
 import Nav from './components/nav/nav'
-
+import LifeCycle from './components/life_cycle/life-cycle'
 class App extends Component {
 
   render() {
@@ -23,7 +23,8 @@ class App extends Component {
     }
 
     return (
-      <Nav navElements = { navElements } />
+      // <Nav navElements = { navElements } />
+      <LifeCycle />
     );
   }
 }
